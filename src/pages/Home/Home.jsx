@@ -24,9 +24,7 @@ export const Home = () => {
   let location = useLocation();
   let currPage = location.state?.pageToShow;
 
-
-    const {openLikesList, likesList} = useSelector((state)=>state.posts)
-    
+  const {openLikesList, likesList} = useSelector((state)=>state.posts)
     
   return (
     <>   

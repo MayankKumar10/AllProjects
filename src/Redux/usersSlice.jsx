@@ -7,7 +7,7 @@ import {useSelector} from 'react-redux';
 
 export const getAllUsers = createAsyncThunk( 
   'users/getAllUsers', 
-  async(_, {rejectWithValue})=>{
+  async(_, { rejectWithValue })=>{
     try{
       const res = await getAllUserAPI();
       return res.data;
