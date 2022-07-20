@@ -3,16 +3,15 @@ import {
   createAsyncThunk,
 } from "@reduxjs/toolkit";
 import axios from "axios";
-import { loginAPI } from "../API/authAPI";
+import { loginAPI, signupAPI } from "../API/authAPI";
 
 const initialState = {
-  token: ""||JSON.parse(localStorage.getItem("VisionSocialToken")),
-  user: null||JSON.parse(localStorage.getItem("VisionSocialUser")),
+  token: "" || JSON.parse(localStorage.getItem("VisionSocialToken")),
+  user: null || JSON.parse(localStorage.getItem("VisionSocialUser")),
   following:[],
   username:'',
   authStatus: "idle",
   authError: null,
-
   };
 
 
@@ -21,6 +20,7 @@ export const loginUser = createAsyncThunk(
    async ({userDetails}, { rejectWithValue }) => {
     try {
       const res = await loginAPI(userDetails);
+      console.log('resDataLogin',res.data);
       return res.data;
     } catch (error) {
       return rejectWithValue(error.response.data);
@@ -65,6 +65,7 @@ export const signupUser = createAsyncThunk(
 		[loginUser.pending]: (state) => {
 			state.authStatus = "loading";
 		},
+
 		[loginUser.fulfilled]: (state, { payload }) => {
     state.user = payload.foundUser;
     state.token = payload.encodedToken;
@@ -95,8 +96,6 @@ export const signupUser = createAsyncThunk(
 			state.authError = payload.errors;
 		},
 	},
-
- 
 })
 
 export const {logout} = authSlice.actions;

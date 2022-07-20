@@ -35,6 +35,7 @@ export function Login() {
 
     console.log('userDetails', userDetails);
     console.log('res following', res)
+    console.log('res Token', res?.payload?.encodedToken);
 
     if (res?.payload?.encodedToken) {
      navigate('/')
