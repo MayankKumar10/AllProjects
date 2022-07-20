@@ -1,12 +1,13 @@
-import React, { useRef } from 'react'
-import { useSelector } from 'react-redux';
+import React, {useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { getTrendingPosts, sortByDate, userFeed } from '../../helper';
 import { InfiniteScrollHook } from '../../hooks';
 import ReactLoading from 'react-loading'
 import { UserPostCard } from '../UserPostCard/UserPostCard';
+import { getPosts } from '../../Redux';
 
 export const AllPosts = () => {
-
+  const dispatch = useDispatch();
   const oldPost = useRef(null);
   let {allPosts, sortBy} = useSelector((state)=>state.posts);
   const {user:{following, username}} = useSelector((state)=>state.auth);
