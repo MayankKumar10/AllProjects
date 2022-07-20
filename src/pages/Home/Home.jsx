@@ -13,8 +13,7 @@ export const Home = () => {
   const dispatch = useDispatch();
 
   const {allPosts,} = useSelector((state)=> state.posts)
-  const {user,} = useSelector((state)=> state.users)
-  
+  const {user} = useSelector((state)=> state.users)
   
     useEffect(()=>{
       dispatch(getAllUsers());
@@ -50,7 +49,7 @@ export const Home = () => {
                 <AllPosts />
                 </Box>
                 </div>
-              )
+              );
           }
         })()}
     </>

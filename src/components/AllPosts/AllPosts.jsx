@@ -29,6 +29,11 @@ let {pageNum, loading} = InfiniteScrollHook({allPosts, oldPost})
 
 let firstSlice = [...allPosts.slice(0, (pageNum) * 6)];
 let lastSlice = allPosts.slice((pageNum - 1) * 6, pageNum )
+
+useEffect(()=>{
+  dispatch(getPosts());
+},[])
+
   return (
     <>
     {firstSlice.map((post)=>{

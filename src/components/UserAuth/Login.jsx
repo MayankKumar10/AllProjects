@@ -31,7 +31,7 @@ export function Login() {
   const loginHandler = (e, userDetails) => {
     e.preventDefault();
     setUserDetails({...userDetails});
-    const res = dispatch(loginUser(userDetails));
+    const res = dispatch(loginUser({userDetails}));
 
     console.log('userDetails', userDetails);
     console.log('res following', res)
