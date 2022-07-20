@@ -34,7 +34,7 @@ export function Login() {
           res.data.encodedToken
         );
         localStorage.setItem("isAuth", true);
-
+        console.log('res Login',res.data);
         const {encodedToken, foundUser} = res.data;
         setAuth({
           token: encodedToken,
