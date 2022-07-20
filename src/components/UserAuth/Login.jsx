@@ -47,8 +47,8 @@ export function Login() {
         navigate(from, {replace: true});
       }
     } catch (error) {
-      console.log('error', error);
-      setError(error?.response?.data?.errors[0]);
+      console.log('error', error?.response?.data?.errors);
+      setError(error?.response?.data?.errors);
     }
   };
 
