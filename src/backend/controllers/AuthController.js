@@ -76,7 +76,9 @@ export const loginHandler = function (schema, request) {
 				{ errors: ["The email you entered is not Registered. Not Found error"] }
 			);
 		}
-		console.log("foundUser.password",foundUser.password)
+		
+		console.log("foundUser.password",foundUser.email)
+		console.log("foundUser.password",foundUser.password);
 		if (password === foundUser.password) {
 			const encodedToken = sign(
 				{ _id: foundUser._id, email },
