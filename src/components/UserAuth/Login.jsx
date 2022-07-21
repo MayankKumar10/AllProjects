@@ -29,6 +29,7 @@ export function Login() {
     e.preventDefault();
     try {
       const res = await loginService(userDetails);
+      console.log(res.data);
       if (res.status === 200) {
         //toast.success("Successfully logged in!");
         localStorage.setItem("vision_token", res.data.encodedToken);
@@ -39,6 +40,7 @@ export function Login() {
           vision_token: res.data.encodedToken,
           isAuth: true,
         });
+        console.log('auth', setAuth);
         navigate(from, {replace: true});
       }
     } catch (err) {
@@ -83,7 +85,7 @@ export function Login() {
                 type="text"
                 name=""
                 id=""
-                // pattern="[A-Za-z].{5,}"
+                pattern="[A-Za-z].{5,}"
                 placeholder="User Name"
                 value={userDetails.email}
                 onChange={(e) =>
