@@ -83,7 +83,7 @@ export function Login() {
                 type="text"
                 name=""
                 id=""
-                pattern="[A-Za-z].{5,}"
+                // pattern="[A-Za-z].{5,}"
                 placeholder="User Name"
                 value={userDetails.email}
                 onChange={(e) =>
