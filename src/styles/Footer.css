@@ -1,0 +1,27 @@
+.FooterContainerMain {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(48, 43, 43);
+  color: #fff;
+  height: 3.7em;
+  padding: 1em;
+  align-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.FooterContainerOne,
+.FooterContainerTwo,
+.FooterAnchorTag {
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.footerIcon {
+  color: var(--Mak-colors-red-500);
+}
+
+.ToggleButton {
+  background-color: transparent;
+  border: none;
+}

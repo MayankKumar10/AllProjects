@@ -1,0 +1,49 @@
+.AppBarContainer {
+  display: flex;
+  width: 25em;
+  height: 3em;
+  align-items: center;
+  font-size: 1.25em;
+  font-weight: 500;
+  justify-content: space-around;
+  overflow: hidden;
+  color: #fff;
+  background-color: var(--color-primary);
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+.AppBarText {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.menuContainer {
+  display: inline-flex;
+  width: 22em;
+}
+
+.menuOptions {
+  padding: 0.75em;
+}
+
+.AppBarOtherOptions {
+  display: flex;
+  width: 8em;
+  height: 3em;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AppBarOptions {
+  padding: 0.75em;
+}
+
+.menuIcons {
+  cursor: pointer;
+}
+
+.padding-normal {
+  padding: 1rem;
+}

@@ -1,0 +1,34 @@
+.GettingStartedMainContainer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  width: 100%;
+}
+
+.GettingStartedHeader {
+  height: 4em;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.GettingStartedMainComponents {
+}
+
+.GettingStartedAside {
+}
+
+.GettingStartedMain {
+}
+
+.GettingStartedFooter {
+}
+
+.GettingStartedIframeAside,
+.GettingStartedIframeMain {
+  z-index: 1;
+  height: 41em;
+  border: 0;
+}

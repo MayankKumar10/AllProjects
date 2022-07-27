@@ -1,0 +1,156 @@
+/*----------------------Card----------------------*/
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.card-box {
+  position: relative;
+  background-color: var(--color-pureWhite);
+  width: 23.3em;
+  border-radius: 3%;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.imgcard-Transition {
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.userInfoPrimary {
+  padding: 1em;
+}
+#card-userInfoHeader {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.cardUserInfo {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.userInfoText {
+  padding: 0 16px 8px 16px;
+}
+
+.cardText {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.cadButtonContainer {
+  display: flex;
+  width: 150px;
+  padding: 0 0.25em;
+  justify-content: space-between;
+}
+
+.readButton {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.bookmark {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.optionContainer {
+  display: flex;
+  gap: 1em;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.cardBadge::before {
+  position: absolute;
+  top: 1.4rem;
+  right: -1.6rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 24px solid var(--color-primary);
+}
+
+.cardBadge::after {
+  position: absolute;
+  content: attr(data-label);
+  top: 0.6rem;
+  right: -1.5rem;
+  padding: 0.5rem;
+  width: 10rem;
+  border-radius: 0.5em 0.5em 0 0.5em;
+  background: var(--color-primary);
+  color: var(--color-pureWhite);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+.container-close-class {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.textOverlay-text {
+  position: absolute;
+  flex-direction: column;
+  bottom: 6.25em;
+  left: 0.5em;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.textOverlay-text,
+.textOverlay-textInfo {
+  color: var(--color-pureWhite) !important;
+}
+
+.card-horizontal {
+  display: flex;
+  width: 41em;
+}
+
+.card-sold-product {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-sold-container:hover .card-sold-productImg {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.card-sold-container:hover .card-sold-product {
+  opacity: 1;
+}

@@ -1,0 +1,597 @@
+@import url("./Alert.css");
+@import url("./Aside.css");
+@import url("./Avatar.css");
+@import url("./Badge.css");
+@import url("./Button.css");
+@import url("./Cards.css");
+@import url("./Colors.css");
+@import url("./Footer.css");
+@import url("./GettingStarted.css");
+@import url("./Header.css");
+@import url("./Image.css");
+@import url("./Input.css");
+@import url("./Typography.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+@import url("./prism.css");
+@import url("./Grid.css");
+@import url("./Navigation.css");
+@import url("./Modal.css");
+@import url("./Lists.css");
+@import url("./Rating.css");
+@import url("./Slider.css");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: initial;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+:root {
+  --color-primary: #007fff;
+  --color-secondary: #d8bebe;
+
+  --color-offWhite: #f7f7f7;
+  --color-pureWhite: #fff;
+  --color-description: rgba(0, 0, 0, 0.54);
+  --color-tomato: tomato;
+
+  --color-errorBackground: rgb(253, 237, 237);
+  --color-error: rgb(95, 33, 32);
+
+  --color-warningBackground: rgb(255, 244, 229);
+  --color-warning: rgb(102, 60, 0);
+
+  --color-infoBackground: rgb(229, 246, 253);
+  --color-info: rgb(1, 67, 97);
+
+  --color-successBackground: rgb(237, 247, 237);
+  --color-success: rgb(30, 70, 32);
+  --color-vision-bg: #c4c6d1;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  --Mak-colors-gray-50: #f7fafc;
+  --Mak-colors-gray-100: #edf2f7;
+  --Mak-colors-gray-200: #e2e8f0;
+  --Mak-colors-gray-300: #cbd5e0;
+  --Mak-colors-gray-400: #a0aec0;
+  --Mak-colors-gray-500: #718096;
+  --Mak-colors-gray-600: #4a5568;
+  --Mak-colors-gray-700: #2d3748;
+  --Mak-colors-gray-800: #1a202c;
+  --Mak-colors-gray-900: #171923;
+  --Mak-colors-red-50: #fff5f5;
+  --Mak-colors-red-100: #fed7d7;
+  --Mak-colors-red-200: #feb2b2;
+  --Mak-colors-red-300: #fc8181;
+  --Mak-colors-red-400: #f56565;
+  --Mak-colors-red-500: #e53e3e;
+  --Mak-colors-red-600: #c53030;
+  --Mak-colors-red-700: #9b2c2c;
+  --Mak-colors-red-800: #822727;
+  --Mak-colors-red-900: #63171b;
+  --Mak-colors-orange-50: #fffaf0;
+  --Mak-colors-orange-100: #feebc8;
+  --Mak-colors-orange-200: #fbd38d;
+  --Mak-colors-orange-300: #f6ad55;
+  --Mak-colors-orange-400: #ed8936;
+  --Mak-colors-orange-500: #dd6b20;
+  --Mak-colors-orange-600: #c05621;
+  --Mak-colors-orange-700: #9c4221;
+  --Mak-colors-orange-800: #7b341e;
+  --Mak-colors-orange-900: #652b19;
+  --Mak-colors-yellow-50: #fffff0;
+  --Mak-colors-yellow-100: #fefcbf;
+  --Mak-colors-yellow-200: #faf089;
+  --Mak-colors-yellow-300: #f6e05e;
+  --Mak-colors-yellow-400: #ecc94b;
+  --Mak-colors-yellow-500: #d69e2e;
+  --Mak-colors-yellow-600: #b7791f;
+  --Mak-colors-yellow-700: #975a16;
+  --Mak-colors-yellow-800: #744210;
+  --Mak-colors-yellow-900: #5f370e;
+  --Mak-colors-green-50: #f0fff4;
+  --Mak-colors-green-100: #c6f6d5;
+  --Mak-colors-green-200: #9ae6b4;
+  --Mak-colors-green-300: #68d391;
+  --Mak-colors-green-400: #48bb78;
+  --Mak-colors-green-500: #38a169;
+  --Mak-colors-green-600: #2f855a;
+  --Mak-colors-green-700: #276749;
+  --Mak-colors-green-800: #22543d;
+  --Mak-colors-green-900: #1c4532;
+  --Mak-colors-teal-50: #e6fffa;
+  --Mak-colors-teal-100: #b2f5ea;
+  --Mak-colors-teal-200: #81e6d9;
+  --Mak-colors-teal-300: #4fd1c5;
+  --Mak-colors-teal-400: #38b2ac;
+  --Mak-colors-teal-500: #319795;
+  --Mak-colors-teal-600: #2c7a7b;
+  --Mak-colors-teal-700: #285e61;
+  --Mak-colors-teal-800: #234e52;
+  --Mak-colors-teal-900: #1d4044;
+  --Mak-colors-blue-50: #ebf8ff;
+  --Mak-colors-blue-100: #bee3f8;
+  --Mak-colors-blue-200: #90cdf4;
+  --Mak-colors-blue-300: #63b3ed;
+  --Mak-colors-blue-400: #4299e1;
+  --Mak-colors-blue-500: #3182ce;
+  --Mak-colors-blue-600: #2b6cb0;
+  --Mak-colors-blue-700: #2c5282;
+  --Mak-colors-blue-800: #2a4365;
+  --Mak-colors-blue-900: #1a365d;
+  --Mak-colors-cyan-50: #edfdfd;
+  --Mak-colors-cyan-100: #c4f1f9;
+  --Mak-colors-cyan-200: #9decf9;
+  --Mak-colors-cyan-300: #76e4f7;
+  --Mak-colors-cyan-400: #0bc5ea;
+  --Mak-colors-cyan-500: #00b5d8;
+  --Mak-colors-cyan-600: #00a3c4;
+  --Mak-colors-cyan-700: #0987a0;
+  --Mak-colors-cyan-800: #086f83;
+  --Mak-colors-cyan-900: #065666;
+  --Mak-colors-purple-50: #faf5ff;
+  --Mak-colors-purple-100: #e9d8fd;
+  --Mak-colors-purple-200: #d6bcfa;
+  --Mak-colors-purple-300: #b794f4;
+  --Mak-colors-purple-400: #9f7aea;
+  --Mak-colors-purple-500: #805ad5;
+  --Mak-colors-purple-600: #6b46c1;
+  --Mak-colors-purple-700: #553c9a;
+  --Mak-colors-purple-800: #44337a;
+  --Mak-colors-purple-900: #322659;
+  --Mak-colors-pink-50: #fff5f7;
+  --Mak-colors-pink-100: #fed7e2;
+  --Mak-colors-pink-200: #fbb6ce;
+  --Mak-colors-pink-300: #f687b3;
+  --Mak-colors-pink-400: #ed64a6;
+  --Mak-colors-pink-500: #d53f8c;
+  --Mak-colors-pink-600: #b83280;
+  --Mak-colors-pink-700: #97266d;
+  --Mak-colors-pink-800: #702459;
+  --Mak-colors-pink-900: #521b41;
+  --Mak-colors-linkedin-50: #e8f4f9;
+  --Mak-colors-linkedin-100: #cfedfb;
+  --Mak-colors-linkedin-200: #9bdaf3;
+  --Mak-colors-linkedin-300: #68c7ec;
+  --Mak-colors-linkedin-400: #34b3e4;
+  --Mak-colors-linkedin-500: #00a0dc;
+  --Mak-colors-linkedin-600: #008cc9;
+  --Mak-colors-linkedin-700: #0077b5;
+  --Mak-colors-linkedin-800: #005e93;
+  --Mak-colors-linkedin-900: #004471;
+  --Mak-colors-facebook-50: #e8f4f9;
+  --Mak-colors-facebook-100: #d9dee9;
+  --Mak-colors-facebook-200: #b7c2da;
+  --Mak-colors-facebook-300: #6482c0;
+  --Mak-colors-facebook-400: #4267b2;
+  --Mak-colors-facebook-500: #385898;
+  --Mak-colors-facebook-600: #314e89;
+  --Mak-colors-facebook-700: #29487d;
+  --Mak-colors-facebook-800: #223b67;
+  --Mak-colors-facebook-900: #1e355b;
+  --Mak-colors-messenger-50: #d0e6ff;
+  --Mak-colors-messenger-100: #b9daff;
+  --Mak-colors-messenger-200: #a2cdff;
+  --Mak-colors-messenger-300: #7ab8ff;
+  --Mak-colors-messenger-400: #2e90ff;
+  --Mak-colors-messenger-500: #0078ff;
+  --Mak-colors-messenger-600: #0063d1;
+  --Mak-colors-messenger-700: #0052ac;
+  --Mak-colors-messenger-800: #003c7e;
+  --Mak-colors-messenger-900: #002c5c;
+  --Mak-colors-whatsapp-50: #dffeec;
+  --Mak-colors-whatsapp-100: #b9f5d0;
+  --Mak-colors-whatsapp-200: #90edb3;
+  --Mak-colors-whatsapp-300: #65e495;
+  --Mak-colors-whatsapp-400: #3cdd78;
+  --Mak-colors-whatsapp-500: #22c35e;
+  --Mak-colors-whatsapp-600: #179848;
+  --Mak-colors-whatsapp-700: #0c6c33;
+  --Mak-colors-whatsapp-800: #01421c;
+  --Mak-colors-whatsapp-900: #001803;
+  --Mak-colors-twitter-50: #e5f4fd;
+  --Mak-colors-twitter-100: #c8e9fb;
+  --Mak-colors-twitter-200: #a8dcfa;
+  --Mak-colors-twitter-300: #83cdf7;
+  --Mak-colors-twitter-400: #57bbf5;
+  --Mak-colors-twitter-500: #1da1f2;
+  --Mak-colors-twitter-600: #1a94da;
+  --Mak-colors-twitter-700: #1681bf;
+  --Mak-colors-twitter-800: #136b9e;
+  --Mak-colors-twitter-900: #0d4d71;
+  --Mak-colors-telegram-50: #e3f2f9;
+  --Mak-colors-telegram-100: #c5e4f3;
+  --Mak-colors-telegram-200: #a2d4ec;
+  --Mak-colors-telegram-300: #7ac1e4;
+  --Mak-colors-telegram-400: #47a9da;
+  --Mak-colors-telegram-500: #0088cc;
+  --Mak-colors-telegram-600: #007ab8;
+  --Mak-colors-telegram-700: #006ba1;
+  --Mak-colors-telegram-800: #005885;
+  --Mak-colors-telegram-900: #003f5e;
+  --Mak-borders-none: 0;
+  --Mak-borders-1px: 1px solid;
+  --Mak-borders-2px: 2px solid;
+  --Mak-borders-4px: 4px solid;
+  --Mak-borders-8px: 8px solid;
+  --Mak-transition: opacity 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms,
+    transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms,
+    -webkit-transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+/*---------------------Prism Css ---------------------*/
+
+pre[class*="language-"].line-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+  border-radius: 1.75em;
+  padding: 2em;
+  border: 4px solid var(--color-primary);
+  margin-top: 3em;
+}
+
+div.code-toolbar {
+  width: 42em;
+}
+
+div.code-toolbar > .toolbar,
+div.code-toolbar:hover > .toolbar {
+  top: 1em;
+  right: 2.2em;
+}
+
+.doc-ContainerMain {
+  margin-top: 4em;
+  width: 48em !important;
+}
+
+.doc-Container {
+  margin-top: -3em;
+}
+
+.fs-rem-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.fs-rem-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.fs-rem-normal {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.fs-rem-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.fs-rem-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.fs-rem-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.fs-rem-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.fs-rem-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.fs-rem-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.fs-rem-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.fs-rem-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+/*---------------------Component---------------------*/
+
+.h1 {
+  font-size: 3rem;
+  line-height: 64px;
+}
+
+.h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.h5 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.TypoHtag {
+  padding: 2em;
+  margin: 1em;
+  border-radius: 20px;
+}
+
+.vision-video-bg {
+  background-color: var(--color-vision-bg);
+}
+
+.GettingStartedIframeHeader,
+.GettingStartedIframeFooter {
+  overflow: hidden;
+  border: 0;
+  height: 3.7em;
+}
+
+.GettingStartedIframeAside,
+.GettingStartedIframeMain {
+  height: 42.0625rem;
+  border: 0;
+}
+
+/* code {
+  padding: 0 5px;
+  border-radius: 5px;
+  margin: 0.12em;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #1a2027;
+  background-color: rgba(102, 178, 255, 0.15);
+} */
+
+.padding-small {
+  padding: 1em 0.5em;
+}
+
+.padding-MainContainer {
+  padding: 4em;
+  background-color: var(--color-offWhite);
+}
+
+.paddingOtherContainer {
+  padding: 4rem 0;
+}
+
+.padding-normal {
+  padding: 1rem;
+}
+.DOMContainer {
+  background-color: var(--color-pureWhite);
+  width: 43em;
+  border-radius: 20px;
+  border: 1px solid var(--color-description);
+}
+
+.descriptionOne {
+  margin: 0.875em;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0.5em 0em;
+  color: var(--color-description);
+}
+
+.description-avatar {
+  margin: 0.875rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0rem;
+  color: var(--color-description);
+}
+
+.discriptionText {
+  font-size: 1.5vw;
+  max-width: 60ch;
+}
+
+.input-radio-chk {
+  width: 8rem;
+  height: 2rem;
+}
+/*-----------------------flex-----------------------*/
+
+.flex {
+  display: flex;
+}
+
+.flex-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-shadow,
+.buttonHoverShadow:hover {
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+.box-shadow-round,
+.box-shadow-round:hover {
+  box-shadow: 0 7px 6px rgb(0 0 0 / 43%);
+}
+
+.primary-button {
+  background-color: var(--color-primary);
+  color: var(--color-pureWhite);
+}
+
+.AlertError {
+  background-color: var(--color-errorBackground);
+  color: var(--color-error);
+}
+
+.AlertWarning {
+  background-color: var(--color-warningBackground);
+  color: var(--color-warning);
+}
+
+.AlertInfo {
+  background-color: var(--color-infoBackground);
+  color: var(--color-info);
+}
+
+.AlertSuccess {
+  background-color: var(--color-successBackground);
+  color: var(--color-success);
+}
+
+.statusBadgeSize {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.875em;
+  position: absolute;
+}
+
+.statusBadgeFlexRightTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.statusBadgeFlexRightBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.statusActive {
+  background-color: var(--Mak-colors-green-500);
+  color: var(--color-success);
+}
+
+.statusAway {
+  background-color: var(--Mak-colors-red-600);
+  color: var(--color-error);
+}
+
+.icon-small {
+  font-size: 1.5em !important;
+}
+
+.icon-medium {
+  font-size: 3em !important;
+}
+
+.icon-large {
+  font-size: 4em !important;
+}
+
+.imgcard {
+  width: 23.3em;
+  border-radius: 3% 3% 0 0;
+}
+
+.imgTransition {
+  transition: width 2s, height 2s, transform 2s;
+}
+
+/* img.imgcard.imgcard-Transition.imgTransition:hover {
+  transform: scale(1.03);
+} */
+
+.imgTransition:hover {
+  transform: scale(1.03);
+}
+
+img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.round-border {
+  border-radius: 50%;
+}
+
+/*------------------------------ Grid ------------------------------*/
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}

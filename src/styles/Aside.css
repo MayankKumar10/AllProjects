@@ -1,0 +1,92 @@
+.asideContainer {
+  width: 15em;
+  background-color: var(--color-offWhite);
+}
+
+.DrawerMenuIcon {
+  margin: 0.625em;
+  display: flex;
+  width: 5em;
+  height: 1.5em;
+  align-items: center;
+  border-radius: 0 0 10px 0;
+  justify-content: space-around;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--color-primary);
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+.DrawerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+.DrawerMailinfo {
+  padding: 0.75em;
+}
+
+#DrawerMail {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#DrawerEmail {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.DrawerMailOther,
+.DrawerLabelsContainer,
+.DrawerSettingsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-direction: wrap;
+}
+
+.DrawerMail,
+.DrawerLabela,
+.DrawerSetting {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  gap: 1em;
+}
+
+hr {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+.DrawerLabelText {
+  font-size: 0.875rem;
+  padding: 0.5em 1em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.anchorDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-hover-bg:hover {
+  color: var(--color-info);
+  background-color: var(--color-infoBackground);
+  border: 0.625em solid var(--color-pureWhite);
+  border-radius: 5%;
+}

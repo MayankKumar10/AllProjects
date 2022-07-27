@@ -1,0 +1,28 @@
+.AlertDomMainContainer {
+  display: flex;
+}
+
+.AlertDomContainer {
+  width: 24rem;
+  height: 3rem;
+  transition: var(--Mak-transition);
+  border-radius: 4px;
+}
+
+.AlertDomButton {
+  color: #bb86fc;
+  border: none;
+  background-color: transparent;
+}
+
+.AlertDomButton,
+.AlertDomClose {
+  cursor: pointer;
+}
+
+.material-icons {
+  font-size: 15px;
+}
+
+.docContainer {
+}

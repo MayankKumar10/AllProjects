@@ -1,0 +1,50 @@
+.AvatarDomContainer {
+  display: flex;
+}
+
+.AvatarImage {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.extra-smallAvatar {
+  max-width: 2em;
+}
+
+.smallAvatar {
+  max-width: 4em;
+}
+
+.mediumAvatar {
+  max-width: 6em;
+}
+
+.largeAvatar {
+  max-width: 8em;
+}
+
+.extra-largeAvatar {
+  max-width: 10em;
+}
+
+.extraAvatar {
+  text-align: center;
+  width: 4em;
+  height: 4em;
+}
+
+.groupedAvatar {
+  margin: 0.875em -0.3em !important;
+}
+
+.AvatarIcons {
+  text-align: center;
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.avatar-icons-large {
+  text-align: center;
+  width: 3.5em;
+  height: 3.5em;
+}

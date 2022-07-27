@@ -1,0 +1,17 @@
+.headerContainerMain {
+  background-color: var(--color-primary);
+  opacity: 0.8;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.headerContainerOne,
+.headerContainerTwo,
+.headerAnchorTag {
+  padding: 0.5em;
+  text-decoration: none;
+}

@@ -1,0 +1,60 @@
+.inputMainContainer {
+}
+
+.inputDomContainer {
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 20px;
+}
+
+.inputContainer {
+  max-width: 15em;
+  height: 15em;
+  border-radius: 15px;
+}
+
+.inputField {
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  width: 16em;
+  height: 4em;
+  padding: 0.5em;
+  font-size: medium;
+}
+
+.input-radio-chk {
+  width: 8rem;
+  height: 2rem;
+}
+
+.inputField:focus {
+  border-color: var(--color-pureWhite);
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.colorPicker {
+  color: var(--color-pureWhite);
+}
+
+.formInput {
+  border: none;
+  padding: 0.5em;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formButtonContainer {
+  width: 18em;
+  justify-content: space-between;
+}

@@ -1,0 +1,56 @@
+.ButtonDomContainer {
+  width: 8em;
+  height: 3rem;
+  border: none;
+  text-align: center;
+  transition: var(--Mak-transition);
+  border-radius: 4px;
+}
+
+.defaultButton {
+  padding: 0.5em;
+}
+
+.TextButton {
+  background-color: transparent;
+  color: var(--color-primary) !important;
+}
+
+.outline-button {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.disabledButton {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.linkButton {
+  text-decoration: none;
+}
+
+.buttonAnimation span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonAnimation span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonAnimation:hover span {
+  padding-right: 25px;
+}
+
+.buttonAnimation:hover span:after {
+  opacity: 1;
+  right: 0;
+}

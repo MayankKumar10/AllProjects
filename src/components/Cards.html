@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../styles/root.css">
+</head>
+<body>
+  <!---------------------------------Cards Component --------------------------------->
+
+  <div class="padding-MainContainer">
+
+    <div >
+      <h1 class="h1Tag">Card</h1>
+      <p class="descriptionOne discriptionText">An Card displays text, products and others things, mostly its used in Product display</p>
+    </div>
+  
+    <div class="paddingOtherContainer">
+      <h3 class="h3Tag">Cards With Badges</h3>
+      <p class="descriptionOne discriptionText">Cards are surfaces that display content and actions on a single topic.
+
+        They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.</p>
+  
+    <div class="DOMContainer flex-column-center">
+        
+      <div class="card-container">
+        <div class="card-box cardBadge box-shadow" data-label="In Progress">
+          <div class="img-container">
+            <img class="imgcard imgTransition imgTransition:hover" src="../Images/card-image.jpg" alt="CardImage" />
+          </div>
+          <div>
+            <div class="userInfoPrimary">
+              <h2 id="card-userInfoHeader">Our Changing Planet</h2>
+              <h3 class="cardUserInfo">by Kurt Wagner</h3>
+            </div>
+            <div class="userInfoText">
+            <p class="cardText">Visit ten places on our planet that are undergoing the biggest changes today.</p>
+            </div>
+            
+            <div class="card-footer">
+              <div class="cadButtonContainer">
+                <button class="readButton">READ</button>
+                <button class="bookmark">BOOKMARK</button>
+              </div>              
+              <div class="optionContainer">
+                <i class="material-icons flex-row-center">favorite_border</i>
+                <i class="material-icons flex-row-center">share</i>
+                <i class="material-icons flex-row-center">more_vert</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+
+<pre><code class="language-markup line-numbers">
+&lt;div class="card-container"&gt;
+&lt;div class="card-box cardBadge box-shadow" data-label="In Progress"&gt;
+&lt;div class="img-container"&gt;
+&lt;img class="imgcard imgTransition imgTransition:hover" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="CardImage" /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div class="userInfoPrimary"&gt;
+&lt;h2 id="card-userInfoHeader"&gt;Our Changing Planet&lt;/h2&gt;
+&lt;h3 class="cardUserInfo"&gt;by Kurt Wagner&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="userInfoText"&gt;
+&lt;p class="cardText"&gt;Visit ten places on our planet that are undergoing the biggest changes today.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="card-footer"&gt;
+&lt;div class="cadButtonContainer"&gt;
+&lt;button class="readButton"&gt;READ&lt;/button&gt;
+&lt;button class="bookmark"&gt;BOOKMARK&lt;/button&gt;
+&lt;/div&gt;              
+&lt;div class="optionContainer"&gt;
+&lt;i class="material-icons flex-row-center"&gt;favorite_border&lt;/i&gt;
+&lt;i class="material-icons flex-row-center"&gt;share&lt;/i&gt;
+&lt;i class="material-icons flex-row-center"&gt;more_vert&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+</code></pre>
+
+</div>
+</div>
+</div>
+      
+  
+    </div>
+  
+    <div class="paddingOtherContainer">
+      <h3 class="h3Tag">Card with Dismiss</h3>
+      <p class="descriptionOne discriptionText">Card with Dismiss we can dismiss the card.</p>
+  
+      <div class="DOMContainer flex-column-center">
+  
+        <div class="card-container">
+          <div class="card-box box-shadow container-close-class" data-label="In Progress">
+            
+            <div class="AvatarDomMainContainer close-button">
+              <div class="AvatarDomContainer descriptionOne flex-evenly ">
+                <i class="material-icons AvatarImage .box-shadow-round AlertInfo AvatarIcons flex-row-center">clear</i>
+            </div>
+            </div>
+
+            <div class="userInfo-container">
+              <div class="userInfoPrimary">
+                <h2 id="card-userInfoHeader">Our Changing Planet</h2>
+                <h3 class="cardUserInfo">by Kurt Wagner</h3>
+              </div>
+              <div class="userInfoText">
+              <p class="cardText">Visit ten places on our planet that are undergoing the biggest changes today.</p>
+              </div>
+              
+              <div class="card-footer">
+                <div class="cadButtonContainer">
+                  <button class="readButton">READ</button>
+                  <button class="bookmark">BOOKMARK</button>
+                </div>              
+                <div class="optionContainer">
+                  <i class="material-icons flex-row-center">favorite_border</i>
+                  <i class="material-icons flex-row-center">share</i>
+                  <i class="material-icons flex-row-center">more_vert</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      
+      </div>
+  
+      <div class="DOMContainer flex-row-center doc-ContainerMain">
+        <div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+        <div class="doc-Container">
+        
+        <pre><code class="language-markup line-numbers">
+        &lt;div class="card-container"&gt;
+        &lt;div class="card-box cardBadge box-shadow" data-label="In Progress"&gt;
+        
+        &lt;div class="AvatarDomMainContainer close-button"&gt;
+          &lt;div class="AvatarDomContainer descriptionOne flex-evenly "&gt;
+            &lt;i class="material-icons AvatarImage .box-shadow-round AlertInfo AvatarIcons flex-row-center"&gt;clear&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="userInfo-container"&gt;
+        &lt;div class="userInfoPrimary"&gt;
+        &lt;h2 id="card-userInfoHeader"&gt;Our Changing Planet&lt;/h2&gt;
+        &lt;h3 class="cardUserInfo"&gt;by Kurt Wagner&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class="userInfoText"&gt;
+        &lt;p class="cardText"&gt;Visit ten places on our planet that are undergoing the biggest changes today.&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="card-footer"&gt;
+        &lt;div class="cadButtonContainer"&gt;
+        &lt;button class="readButton"&gt;READ&lt;/button&gt;
+        &lt;button class="bookmark"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;              
+        &lt;div class="optionContainer"&gt;
+        &lt;i class="material-icons flex-row-center"&gt;favorite_border&lt;/i&gt;
+        &lt;i class="material-icons flex-row-center"&gt;share&lt;/i&gt;
+        &lt;i class="material-icons flex-row-center"&gt;more_vert&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        </code></pre>
+        
+        </div>
+        </div>
+        </div>
+              
+        
+    </div>
+
+
+  
+    <div class="AlertContainerThree paddingOtherContainer">
+      <h3 class="h3Tag">Card with text Overlay</h3>
+      <p class="descriptionOne discriptionText">Card Text overlay on card, it tells about the card or we can also pass information by it, like sold out cards in e-commerce
+      </p>
+  
+      <div class="DOMContainer flex-column-center">
+        
+        <div class="card-container">
+          <div class="card-box box-shadow" data-label="In Progress">
+            <div class="img-container">
+              <img class="imgcard imgTransition" src="../Images/card-image.jpg" alt="CardImage" />
+
+              <div class="userInfoPrimary textOverlay-text">
+                <h2 id="card-userInfoHeader">Our Changing Planet</h2>
+                <h3 class="cardUserInfo textOverlay-textInfo">by Kurt Wagner</h3>
+              </div>
+
+            </div>
+            <div class="userInfo-container">
+             
+              <div class="userInfoText">
+              <p class="cardText">Visit ten places on our planet that are undergoing the biggest changes today.</p>
+              </div>
+              
+              <div class="card-footer">
+                <div class="cadButtonContainer">
+                  <button class="readButton">READ</button>
+                  <button class="bookmark">BOOKMARK</button>
+                </div>              
+                <div class="optionContainer">
+                  <i class="material-icons flex-row-center">favorite_border</i>
+                  <i class="material-icons flex-row-center">share</i>
+                  <i class="material-icons flex-row-center">more_vert</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  
+      <div class="DOMContainer flex-row-center doc-ContainerMain">
+        <div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+        <div class="doc-Container">
+        
+        <pre><code class="language-markup line-numbers">
+        &lt;div class="card-container"&gt;
+        &lt;div class="card-box cardBadge box-shadow" data-label="In Progress"&gt;
+        &lt;div class="img-container"&gt;
+        &lt;img class="imgcard imgTransition imgTransition:hover" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="CardImage" /&gt;
+        &lt;div class="userInfoPrimary textOverlay-text"&gt;
+        &lt;h2 id="card-userInfoHeader"&gt;Our Changing Planet&lt;/h2&gt;
+        &lt;h3 class="cardUserInfo"&gt;by Kurt Wagner&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+        &lt;div class="userInfoText"&gt;
+        &lt;p class="cardText"&gt;Visit ten places on our planet that are undergoing the biggest changes today.&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="card-footer"&gt;
+        &lt;div class="cadButtonContainer"&gt;
+        &lt;button class="readButton"&gt;READ&lt;/button&gt;
+        &lt;button class="bookmark"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;              
+        &lt;div class="optionContainer"&gt;
+        &lt;i class="material-icons flex-row-center"&gt;favorite_border&lt;/i&gt;
+        &lt;i class="material-icons flex-row-center"&gt;share&lt;/i&gt;
+        &lt;i class="material-icons flex-row-center"&gt;more_vert&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        </code></pre>
+        
+        </div>
+        </div>
+        </div>
+              
+        
+    </div>
+  
+
+
+    <div class="AlertContainerTwo paddingOtherContainer">
+      <h3 class="h3Tag">Horizontal Cards</h3>
+      <p class="descriptionOne discriptionText">Cards are surfaces that display content and actions on a single topic.
+
+        They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.</p>
+  
+    <div class="DOMContainer flex-column-center padding-normal">
+        
+      <div class="card-container">
+        <div class="card-box box-shadow card-horizontal" data-label="In Progress">
+          <div >
+            <img class="imgcard imgTransition" src="../Images/card-image.jpg" alt="CardImage" />
+          </div>
+          <div class="userInfo-container">
+            <div class="userInfoPrimary">
+              <h2 id="card-userInfoHeader">Our Changing Planet</h2>
+              <h3 class="cardUserInfo">by Kurt Wagner</h3>
+          </div>
+            <div class="userInfoText">
+            <p class="cardText">Visit ten places on our planet that are undergoing the biggest changes today.</p>
+            </div>
+            
+            <div class="card-footer">
+              <div class="cadButtonContainer">
+                <button class="readButton">READ</button>
+                <button class="bookmark">BOOKMARK</button>
+              </div>              
+              <div class="optionContainer">
+                <i class="material-icons flex-row-center">favorite_border</i>
+                <i class="material-icons flex-row-center">share</i>
+                <i class="material-icons flex-row-center">more_vert</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  
+    <div class="DOMContainer flex-row-center doc-ContainerMain">
+      <div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+      <div class="doc-Container">
+      
+      <pre><code class="language-markup line-numbers">
+      &lt;div class="card-container"&gt;
+      &lt;div class="card-box cardBadge box-shadow card-horizontal" data-label="In Progress"&gt;
+      &lt;div class="img-container"&gt;
+      &lt;img class="imgcard imgTransition imgTransition:hover" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="CardImage" /&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;div class="userInfoPrimary"&gt;
+      &lt;h2 id="card-userInfoHeader"&gt;Our Changing Planet&lt;/h2&gt;
+      &lt;h3 class="cardUserInfo"&gt;by Kurt Wagner&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class="userInfoText"&gt;
+      &lt;p class="cardText"&gt;Visit ten places on our planet that are undergoing the biggest changes today.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class="card-footer"&gt;
+      &lt;div class="cadButtonContainer"&gt;
+      &lt;button class="readButton"&gt;READ&lt;/button&gt;
+      &lt;button class="bookmark"&gt;BOOKMARK&lt;/button&gt;
+      &lt;/div&gt;              
+      &lt;div class="optionContainer"&gt;
+      &lt;i class="material-icons flex-row-center"&gt;favorite_border&lt;/i&gt;
+      &lt;i class="material-icons flex-row-center"&gt;share&lt;/i&gt;
+      &lt;i class="material-icons flex-row-center"&gt;more_vert&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      
+      
+      </code></pre>
+      
+      </div>
+      </div>
+      </div>
+            
+      
+
+    </div>
+
+    <div class="AlertContainerTwo paddingOtherContainer">
+      <h3 class="h3Tag">Cards Product Sold</h3>
+      <p class="descriptionOne discriptionText">Product Sold Card </p>
+  
+    <div class="DOMContainer flex-column-center">
+        
+      <div class="card-container card-sold-container ">
+        <div class="card-box box-shadow" data-label="In Progress">
+          <div class="img-container">
+            <img class="imgcard card-sold-productImg" src="../Images/card-image.jpg" alt="CardImage" />
+          </div>
+          <div class="userInfo-container">
+            <div class="userInfoPrimary">
+              <h2 id="card-userInfoHeader">Our Changing Planet</h2>
+              <h3 class="cardUserInfo">by Kurt Wagner</h3>
+            </div>
+            <div class="userInfoText">
+            <p class="cardText">Visit ten places on our planet that are undergoing the biggest changes today.</p>
+            </div>
+            
+            <div class="card-footer card-sold-productImg">
+              <div class="cadButtonContainer">
+                <button class="readButton">READ</button>
+                <button class="bookmark">BOOKMARK</button>
+              </div>              
+              <div class="optionContainer">
+                <i class="material-icons flex-row-center">favorite_border</i>
+                <i class="material-icons flex-row-center">share</i>
+                <i class="material-icons flex-row-center">more_vert</i>
+              </div>
+            </div>
+          </div>
+
+            <div class="card-sold-product">     
+              <div class="AlertDomMainContainer">
+                <input type="button" class="ButtonDomContainer  descriptionOne AlertInfo flex-evenly buttonHoverShadow" value="Sold Out" />
+            </div>
+            </div>
+
+        </div>
+      </div>
+        
+    </div>
+  
+    <div class="DOMContainer flex-row-center doc-ContainerMain">
+      <div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+      <div class="doc-Container">
+      
+      <pre><code class="language-markup line-numbers">
+      &lt;div class="card-container"&gt;
+      &lt;div class="card-box cardBadge box-shadow" data-label="In Progress"&gt;
+      &lt;div class="img-container"&gt;
+      &lt;img class="imgcard imgTransition card-sold-productImg imgTransition:hover" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="CardImage" /&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;div class="userInfoPrimary"&gt;
+      &lt;h2 id="card-userInfoHeader"&gt;Our Changing Planet&lt;/h2&gt;
+      &lt;h3 class="cardUserInfo"&gt;by Kurt Wagner&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class="userInfoText"&gt;
+      &lt;p class="cardText"&gt;Visit ten places on our planet that are undergoing the biggest changes today.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class="card-footer card-sold-productImg"&gt;
+      &lt;div class="cadButtonContainer"&gt;
+      &lt;button class="readButton"&gt;READ&lt;/button&gt;
+      &lt;button class="bookmark"&gt;BOOKMARK&lt;/button&gt;
+      &lt;/div&gt;              
+      &lt;div class="optionContainer"&gt;
+      &lt;i class="material-icons flex-row-center"&gt;favorite_border&lt;/i&gt;
+      &lt;i class="material-icons flex-row-center"&gt;share&lt;/i&gt;
+      &lt;i class="material-icons flex-row-center"&gt;more_vert&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card-sold-product"&gt;     
+        &lt;div class="AlertDomMainContainer"&gt;
+          &lt;input type="button" class="ButtonDomContainer  descriptionOne AlertInfo flex-evenly buttonHoverShadow" value="Sold Out" /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      
+      
+      </code></pre>
+      
+      </div>
+      </div>
+      </div>
+            
+      
+
+    </div>
+
+  </div>
+
+<script src="../scripts/Cards.js"></script>
+<script src="../scripts/prism.js"></script>
+</body>
+</html>

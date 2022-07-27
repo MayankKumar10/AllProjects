@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/root.css">
+  </head>
+<body>
+
+<!--------------------------------- Avatar Component --------------------------------->
+
+<div class="AvatarMainContainer padding-MainContainer">
+
+  <div class="AvatarContainerOne">
+    <h1 class="h1Tag">Avatar</h1>
+    <p class="description-avatar discriptionText">The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.</p>
+  </div>
+
+  <div class="AvatarContainerTwo paddingOtherContainer">
+    <h3 class="h3Tag">Basic Avatars</h3>
+    <p class="description-avatar discriptionText">In this Avatar are in round images wit hover effect.</p>
+
+    <div class="DOMContainer flex-row-center">
+    
+    <div class="AvatarDomMainContainer">
+        <div class="AvatarDomContainer description-avatar flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/steve.jpg" alt="" sizes="" srcset="">
+      </div>
+    </div>
+      
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/kristy.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/matthew.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+      <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/molly.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+      <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/avataaars.svg" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+
+    </div>
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+<pre><code class="language-markup line-numbers">
+&lt;div class="AvatarDomMainContainer"&gt;
+&lt;div class="AvatarDomContainer description-avatar flex-evenly "&gt;
+&lt;img class="AvatarImage smallAvatar box-shadow-round" src="../Images/avataaars.svg" alt="" sizes="" srcset=""&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</div>
+</div>
+</div>
+      
+
+  </div>
+
+  <div class="AvatarContainerTwo paddingOtherContainer">
+    <h3 class="h3Tag">Sizes</h3>
+    <p class="descriptionOne discriptionText">You can change the size of the avatar with the <code>height</code> and <code>width</code> CSS properties.</p>
+
+    <div class="DOMContainer flex-row-center">
+
+      <div class="AvatarDomMainContainer">
+        <div class="AvatarDomContainer descriptionOne flex-evenly ">
+        <img class="AvatarImage extra-smallAvatar box-shadow-round" src="../Images/steve.jpg" alt="AvatarImage1" sizes="" srcset="">
+      </div>
+    </div>
+      
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer descriptionOne flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/kristy.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer descriptionOne flex-evenly ">
+        <img class="AvatarImage mediumAvatar box-shadow-round" src="../Images/matthew.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer descriptionOne flex-evenly ">
+      <img class="AvatarImage largeAvatar box-shadow-round" src="../Images/molly.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer descriptionOne flex-evenly ">
+      <img class="AvatarImage extra-largeAvatar box-shadow-round" src="../Images/avataaars.svg" alt="" sizes="" srcset="">
+    </div>
+    </div>
+    
+    </div>
+
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+<pre><code class="language-markup line-numbers">
+&lt;div class="AvatarDomMainContainer"&gt;
+&lt;div class="AvatarDomContainer description-avatar flex-evenly "&gt;
+&lt;img class="AvatarImage extra-largeAvatar box-shadow-round" src="../Images/avataaars.svg" alt="" sizes="" srcset=""&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</div>
+</div>
+</div>
+  </div>
+
+  <div class="AvatarContainerTwo paddingOtherContainer">
+    <h3 class="h3Tag">Letter And Icon avatars</h3>
+    <p class="description-avatar discriptionText">Avatars containing simple characters and icon can be created by passing a string and icons as children respectively.</p>
+
+    <div class="DOMContainer flex-row-center">
+    
+    <div class="AvatarDomMainContainer ">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+      <div class="AvatarImage box-shadow-round AlertInfo extraAvatar flex-row-center" alt="" srcset="">AB</div>
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer ">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+      <div class="AvatarImage box-shadow-round AlertWarning extraAvatar flex-row-center" alt="" srcset="">CD</div>
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer ">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+        <i class="material-icons AvatarImage box-shadow-round AlertInfo avatar-icons-large flex-row-center">book</i>
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer ">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+        <i class="material-icons AvatarImage box-shadow-round AlertError avatar-icons-large flex-row-center">camera</i>
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer ">
+      <div class="AvatarDomContainer description-avatar flex-evenly ">
+        <i class="material-icons AvatarImage box-shadow-round AlertSuccess avatar-icons-large flex-row-center">check_circle</i>
+    </div>
+    </div>
+
+</div>
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+<pre><code class="language-markup line-numbers">
+&lt;div class="AvatarDomMainContainer"&gt;
+&lt;div class="AvatarDomContainer description-avatar flex-evenly "&gt;
+&lt;i class="material-icons AvatarImage box-shadow-round AlertSuccess AvatarIcons flex-row-center"&gt;check_circle&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</div>
+</div>
+</div>
+
+  </div>
+
+  <div class="AvatarContainerTwo paddingOtherContainer">
+    <h3 class="h3Tag">With badge</h3>
+    <p class="description-avatar discriptionText">Badge create Status of Avatar</p>
+
+    <div class="DOMContainer flex-row-center">
+    
+    <div class="AvatarDomMainContainer">
+        <div class="AvatarDomContainer description-avatar statusBadgeFlexRightBottom">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/steve.jpg" alt="" sizes="" srcset="">
+        <i class="material-icons AvatarImage statusBadgeSize statusActive flex-row-center">visibility</i>
+      </div>
+    </div>
+      
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar statusBadgeFlexRightBottom ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/kristy.png" alt="" sizes="" srcset="">
+        <i class="material-icons AvatarImage statusBadgeSize statusAway flex-row-center">visibility_off</i>
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar statusBadgeFlexRightBottom">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/matthew.png" alt="" sizes="" srcset="">
+        <img class="material-icons AvatarImage statusBadgeSize statusAway flex-row-center" src="../Images/molly.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar statusBadgeFlexRightBottom ">
+      <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/molly.png" alt="" sizes="" srcset="">
+      <div class="material-icons AvatarImage statusBadgeSize statusAway flex-row-center" alt="" srcset="">CD</div>
+    </div>
+    </div>
+
+    </div>
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+<pre><code class="language-markup line-numbers">
+&lt;div class="AvatarDomMainContainer"&gt;
+&lt;div class="AvatarDomContainer description-avatar statusBadgeFlexRightBottom "&gt;
+&lt;img class="AvatarImage smallAvatar box-shadow-round" src="../Images/avataaars.svg" alt="" sizes="" srcset=""&gt;
+&lt;div class="material-icons AvatarImage statusBadgeSize statusAway flex-row-center" alt="" srcset=""&gt;CD&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</div>
+</div>
+</div>
+  </div>
+
+  <div class="AvatarContainerTwo paddingOtherContainer">
+    <h3 class="h3Tag">Basic Avatars</h3>
+    <p class="description-avatar discriptionText">The Avatar offers four severity levels that set a distinctive icon and color.</p>
+
+    <div class="DOMContainer flex-row-center">
+    
+    <div class="AvatarDomMainContainer">
+        <div class="AvatarDomContainer description-avatar groupedAvatar flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/steve.jpg" alt="" sizes="" srcset="">
+      </div>
+    </div>
+      
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar groupedAvatar flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/kristy.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar groupedAvatar groupedAvatar flex-evenly ">
+        <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/matthew.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar groupedAvatar flex-evenly ">
+      <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/molly.png" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer">
+      <div class="AvatarDomContainer description-avatar groupedAvatar flex-evenly ">
+      <img class="AvatarImage smallAvatar box-shadow-round" src="../Images/avataaars.svg" alt="" sizes="" srcset="">
+    </div>
+    </div>
+
+    <div class="AvatarDomMainContainer ">
+      <div class="AvatarDomContainer description-avatar groupedAvatar flex-evenly ">
+      <div class="AvatarImage box-shadow-round extraAvatar flex-row-center" alt="" srcset="">+75</div>
+    </div>
+    </div>
+
+    </div>
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+<pre><code class="language-markup line-numbers">
+&lt;div class="AvatarDomMainContainer"&gt;
+&lt;div class="AvatarDomContainer description-avatar groupedAvatar flex-evenly "&gt;
+&lt;img class="AvatarImage extraAvatar box-shadow-round flex-row-center" src="../Images/avataaars.svg" alt="" sizes="" srcset=""&gt;+75
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</div>
+</div>
+</div>
+
+  </div>
+
+
+</div>
+
+<script src="../scripts/icons.js"></script>
+<script src="../scripts/prism.js"></script>
+
+</body>
+</html>
